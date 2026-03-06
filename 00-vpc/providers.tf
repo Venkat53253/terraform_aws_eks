@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket = "venaws-remote-state"
-    key    = "vpc-test"
+    key    = "vpc-test1"
     region = "us-east-1"
     encrypt        = true
     use_lockfile = true
