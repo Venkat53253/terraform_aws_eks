@@ -78,9 +78,11 @@ pipeline {
                             cd 00-vpc
                             terraform apply -auto-approve
                         """
+                    }
                 }
             }
         }
+    
         // Down stream job
         stage('Trigger SG') {
             steps {
